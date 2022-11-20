@@ -1,0 +1,26 @@
+
+body
+{
+    font-family: 'Courier', monospace !important;
+}
+
+table
+{
+    margin-top: 2.5vh;
+}
+
+a
+{
+    color: rgba(0, 0, 0, 0.8) !important;
+}
+
+dt
+{
+    margin-left: 2.5vh;
+}
+
+dd
+{
+    padding-left: 5vh;
+}
+
