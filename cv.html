@@ -5,35 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-         background: #c0c3ff url(images/bg.jpg);
-         color: rgb(0, 0, 0); 
-        }
-       </style>
+    
+    <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
-    <img class="fit-picture"
-     src="https://1tb.favim.com/preview/6/678/6789/67890/6789006.jpg"
-     alt="A picture of me (let's pretend that it is)">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="cv.html">My CV</a>
+        <a href="Form.html">Form</a>
+        <a href="styles.html">Styles</a>
+        <input type="text" placeholder="Search..">
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="image"><img class="fit-picture"
+            src="https://1tb.favim.com/preview/6/678/6789/67890/6789006.jpg"
+            alt="A picture of me (let's pretend that it is)">
+            </div>
+            <h1>Saida Sainova</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="inner-text">
+        <p>Front Office Supervisor
+            <br>19.05.2001
+            <br>Astana, Kazakhstan
+            <br>Hospitality bussiness professional and aspiring web-developer
+        </p>
+    </div>
+    <hr>
 
-    
-    <h1>Saida Sainova</h1>
-    <hr size="6" noshade>
-    <h3><em><strong>Front Office Supervisor</strong><br>19.05.2001<br>Astana, Kazakhstan</em><h3>
-    
-    <h3><em>Hospitality bussiness professional and aspiring web-developer</em></h3>
-
-    <hr size="6" noshade>
-
-    <h2>Educational Background</h2>
+    <h2 class="groups">Educational Background</h2>
         <ul type="disc">
             <li>Turan University - Hotel Management (Almaty, 2019)</li>
             <li>School-lyceum №35 (Uralsk, 2018)</li>
         </ul>
 
-    <h2>Work experience</h2>
+    <h2 class="groups">Work experience</h2>
 
         <p><em>Here is listed my work experience in order of relevancy up to date.</em></p>
 
@@ -91,7 +100,7 @@
             </tr>
           </table>
 
-    <h2>Language proficiency</h2>
+    <h2 class="groups">Language proficiency</h2>
     <table border="2" style="border-collapse: collapse">
         <tr>
           <th>No</th>
@@ -125,7 +134,7 @@
         </tr>
       </table>
 
-    <h2>Valuable skills</h2>
+    <h2 class="groups">Valuable skills</h2>
         <ul type="disc">
            <li>B2B/B2C communication</li>
            <li>Opera PMS, Micros, OnQ property management</li>
@@ -134,14 +143,14 @@
            <li>Teamwork</li>
         </ul>
 
-    <h2>Hobbies</h2>
+    <h2 class="groups">Hobbies</h2>
         <ul type="disc">
             <li>Playing ukulele</li>
             <li>Watching commentary and video-essays</li>
             <li>Foreign languages</li>
         </ul>
 
-    <h2>Contact information</h2>
+    <h2 class="groups">Contact information</h2>
         <ul type="disc">
             <li>Tel. number - 8 747 644 09 67</li>
             <li>Email - madsadee@gmail.com; saida.sainova@hilton.com</li>
@@ -150,7 +159,7 @@
         </ul>
 
   <button>
-    <a target="_blank" action="index.html">Go back</a>
+    <a target="_blank" href="index.html">Go back</a>
   </button>
 
     
