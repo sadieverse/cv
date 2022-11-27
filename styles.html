@@ -4,29 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styles</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>CSS Styles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="cv.html">My CV</a>
-        <a href="Form.html">Form</a>
-        <a class="active" href="styles.html">Styles</a>
-        <input type="text" placeholder="Search..">
-    </div>
-    <div>
-        <header class="header">
-            <div class="container">
-                <h1 class="Main header">Styles</h1> 
-                <hr>
+    <div class="container">
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            <a href="newcv.html">My CV</a>
+            <a href="form.html">Form</a>
+            <a class="active" href="Styles.html">Styles</a>
+            <div class="searchbar">
+                <input type="text" placeholder="Search..">
             </div>
-        </header>
+        </div>
+        <div class="group">
+            <div class="header">
+                <h1 class="Mainheader">
+                    CSS Styles
+                </h1>
+                <p class="headertext">
+                    Introduction to CSS styles.
+                </p>
+            </div>
+        </div>
+        <div class="group" id="infoblock">
+            <div class="smallblock" id="aboutcss">
+                <h2 class="blockname">
+                    What is CSS?
+                </h2>
+                <div class="infotext">
+                    CSS (Cascading Style Sheets) is a language for specifying how documents are presented to users — how they are styled, laid out, etc.
+                </div>
+            </div>
+            <div class="smallblock" id="fivestyles">
+                <h2 class="blockname">
+                    5 CSS Style examples
+                </h2>
+            </div>
+            <div class="smallblock">
+                <h2 class="blockname">
+                    1. text-decoration:
+                </h2>
+                <div class="infotext">
+                    A property that specifies the decoration added to text. It is a shorthand property for:
+                    <div class="list">
+                        <ul>
+                            <li>text-decoration-line</li>
+                            <li>text-decoration-color</li>
+                            <li>text-decoration-style</li>
+                            <li>text-decoration-thickness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="smallblock">
+                <h2 class="blockname">
+                    2. padding
+                </h2>
+                <div class="infotext">
+                    An element's padding is the space between its content and its border. <br>
+                    Padding creates extra space within an element, while margin creates extra space around an element. This property can have from one to four values. <br>
+                    It is a shorthand property for all the padding-* properties:
+                    <div class="list">
+                        <ul>
+                            <li>padding-top</li>
+                            <li>padding-right</li>
+                            <li>padding-left</li>
+                            <li>padding-bottom</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="smallblock">
+                <h2 class="blockname">
+                    3. opacity
+                </h2>
+                <div class="infotext">
+                    The opacity CSS property sets the opacity of an element. 
+                    Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency. <br>
+                    <br>
+                    Opacity applies to the element as a whole, including its contents, even though the value is not inherited by child elements. Thus, the element and its children all have the same opacity relative to the element's background, even if they have different opacities relative to one another.
+                </div>
+            </div>
+            <div class="smallblock">
+                <h2 class="blockname">
+                    4. display
+                </h2>
+                <div class="infotext">
+                    The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex. <br>
+                    <br>
+                    Formally, the display property sets an element's inner and outer display types. The outer type sets an element's participation in flow layout; the inner type sets the layout of children. <br>
+                    Some values of display are fully defined in their own individual specifications; for example the detail of what happens when display: flex is declared is defined in the CSS Flexible Box Model specification.
+                </div>
+            </div>
+            <div class="smallblock">
+                <h2 class="blockname">
+                    5. float
+                </h2>
+                <div class="infotext">
+                    The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. <br>
+                    The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning). <br>
+                    <br>
+                    The float property is specified as a single keyword, chosen from the list of values below.
+                    <div class="list">
+                        <ul>
+                            <li>left</li>
+                            <li>right</li>
+                            <li>none</li>
+                            <li>inline-start</li>
+                            <li>inline-end</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="smallblock">
+                <h2 class="blockname">
+                    References:
+                </h2>
+                <div class="list">
+                    <ol>
+                        <li><a class="reflink" href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS styles</a></li>
+                        <li><a class="reflink" href="https://www.w3schools.com/cssref/pr_text_text-decoration.php">Text-decoration</a></li>
+                        <li><a class="reflink" href="https://www.w3schools.com/cssref/pr_padding.php">Padding</a></li>
+                        <li><a class="reflink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity">Opasity</a></li>
+                        <li><a class="reflink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Display</a></li>
+                        <li><a class="reflink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">Float</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
     </div>
-    <div class="reference">
-        <h2 class="groups">Reference:</h2>
-        <a id="ref-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS styles</a>
-    </div>
-    
 </body>
 </html>

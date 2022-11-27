@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            <a href="newcv.html">My CV</a>
+            <a class="active" href="form.html">Form</a>
+            <a href="Styles.html">Styles</a>
+            <div class="searchbar">
+                <input type="text" placeholder="Search..">
+            </div>
+        </div>
+        <div class="group">
+            <div class="header">
+                <h1 class="Mainheader">
+                    Form
+                </h1>
+                <p class="headertext">
+                    Please fill out the form below.
+                </p>
+            </div>
+        </div>
+        <div class="group smallblock" id="infoblock">
+            <div class="form">
+                <form action="cv.html">
+                  <label class="formlabel" for="name">Your First Name:</label>
+                  <input class="forminput" type="text" id="name" />
+                  <br>
+                  
+                  <label class="formlabel" for="surname">Your Last Name:</label>
+                  <input class="forminput" type="text" id="surname" />
+                  <br>
+                  
+                  <label class="formlabel" for="email">EMAIL:</label>
+                  <input class="forminput" type="email" id="email" />
+                  <br>
+                  
+                  <label class="formlabel" for="password">PASSWORD:</label>
+                  <input class="forminput" type="password" id="password" />
+                  <br>
+                  
+                  <input class="forminput" type="date" />
+                  <br>
+                  
+                  <input class="forminput" type="submit" value="SEND" />
+                  <br>
+                  
+                  <select class="formselect" name="groups" id="pickgroups">
+                    <option value="">Select your group</option>
+                    <option value="F4">F4 Monday Thursday</option>
+                    <option value="F5">F5 Tuesday Friday</option>
+                    <option value="F6">F5 Wednesday Saturday</option>
+                  </select>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

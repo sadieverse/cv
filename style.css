@@ -1,0 +1,158 @@
+body, html {
+    height: 100%;
+    /* demo bg image */
+    background-image: url("bg2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    /* background-color: pink; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 400;
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color:  #e643b8;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:#e9dae2;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #ff5069;
+    color: white;
+  }
+
+   /* Add search bar style */
+   .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+ /* contents */
+
+ .container{
+  background-color: #e9dae2;
+  margin: 30px;
+  opacity: 0.9;
+  padding-bottom: 50px;
+}
+
+.blockname{
+  text-decoration: underline;
+  font-style: italic;
+}
+
+
+.header{
+  margin: 30px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.headertext{
+  font-style: italic;
+}
+.group{
+  margin: 30px;
+}
+.smallblock{
+  padding: 10px;
+  margin: 30px;
+  border-color:#e643b8;
+  border-style: double;
+}
+
+.table, th, td{
+  margin: 20px 10px;
+  border: 2px solid #e182c6;
+}
+table{
+  width: 100%;
+}
+
+ul {
+  list-style-type: square;
+  font-style: italic;
+}
+ol{
+  font-style: italic;
+}
+
+.games{
+  padding: 50px 250px;
+}
+
+.forminput, .formlabel, .formselect{
+  margin: 10px;
+  text-align: center;
+}
+.form{
+  padding: 20px;
+  font-size: x-large;
+}
+
+
+
+/*links in the body*/
+a{
+  color:black;
+  text-decoration: none;
+}   
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:active{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: #e643b8;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+  /* opening animation */
+  body
+{
+    position: relative;
+    animation: page-blur 1s linear;
+}
+
+    @keyframes page-blur
+    {
+        0% {-webkit-filter: blur(3vh)}
+        50% {-webkit-filter: blur(1.5vh)}
+        100% {-webkit-filter: blur(0vh)}
+    }
