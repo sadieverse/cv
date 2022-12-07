@@ -1,0 +1,17 @@
+a{
+    color:$fontColor;
+    text-decoration: none;
+    &:active{
+        color:$fontColor;
+        text-decoration: none;
+    }
+    &:hover{
+        color: $brightPink;
+        text-decoration: underline;
+    }
+    &:visited{
+        color:$fontColor;
+        text-decoration: none;
+    }
+  }  
+  

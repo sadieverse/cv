@@ -1,0 +1,35 @@
+.topnav {
+    background-color: $brightPink;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+
+    a{
+        float: left;
+        color: $fontColor;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: $topnavFontSize;
+
+        &:active{
+            background-color: #ff5069;
+            color: white;
+        }
+        &:hover{
+            background-color:#e9dae2;
+            color: $fontColor;
+        }
+    }
+
+    input[type=text] {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: $topnavFontSize;
+        font: $primaryFont;
+      }
+}

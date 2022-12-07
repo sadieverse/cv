@@ -1,0 +1,28 @@
+.movingimg{
+    display: inline-block;
+    animation-name: kirby1;
+    animation-duration: 5s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+    /* transform: translate(10px); */
+  
+  }
+  
+  @keyframes kirby1 {
+    to{ transform: translate(800px);}
+   
+    0% {
+      left: 0;
+      }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  
+  .kirby{
+    width: 50px;
+    height: 50px;
+  }

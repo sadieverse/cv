@@ -1,0 +1,100 @@
+@import './variables';
+@import './bgimage';
+@import './header';
+@import './kirby';
+@import './topnav';
+@import './inputs';
+@import './tables';
+@import './footer';
+@import './links';
+
+
+body, html{
+    font: $primaryFont $fontColor $fontSize $fontWeight;
+    height: 100%;
+}
+body{
+    position: relative;
+    animation: page-blur 1s linear;
+}
+@keyframes page-blur
+{
+    0% {-webkit-filter: blur(3vh)}
+    50% {-webkit-filter: blur(1.5vh)}
+    100% {-webkit-filter: blur(0vh)}
+}
+
+@media screen and (max-width: 678px){
+    .topnav{
+      display: flexbox;
+    }
+    .searchbar{
+      display:flexbox;
+      width: 20%;
+      float:right;
+    }
+    .siteheader{
+      margin:0px;
+      border:0px;
+      padding:0px;
+      display: flex;
+    }
+   .movingimg{
+    display: inline-flex;
+   }
+   .container{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+.container{
+    background-color: #e9dae2;
+    margin: 30px;
+    opacity: 0.9;
+    padding-bottom: 50px;
+  }
+  
+  .blockname{
+    text-decoration: underline;
+    font-style: $italicFont;
+    font-size: 30px;
+    transition: 3s;
+    &:hover{
+        font-size: 40px;
+    }
+  }
+  
+  .header{
+    margin: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .headertext{
+    font-style: $italicFont;
+  }
+  .group{
+    margin: 30px;
+  }
+  .smallblock{
+    padding: 10px;
+    margin: 30px;
+    border-color: $brightPink;
+    border-style: double;
+  }
+  ul {
+    list-style-type: square;
+    font-style: $italicFont;
+  }
+  ol{
+    font-style: $italicFont;
+  }
+  
+  .games{
+    padding: 50px 250px;
+  }
+  .form{
+    padding: 20px;
+    font-size: x-large;
+  }
+
