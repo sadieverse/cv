@@ -7,6 +7,7 @@
 @import './tables';
 @import './footer';
 @import './links';
+@use 'utils';
 
 
 body, html{
@@ -50,9 +51,9 @@ body{
 
 .container{
     background-color: #e9dae2;
-    margin: 30px;
+    @include utils.commonmargin;
     opacity: 0.9;
-    padding-bottom: 50px;
+    padding-bottom: myFunc(5px, 10px);
   }
   
   .blockname{
@@ -66,7 +67,7 @@ body{
   }
   
   .header{
-    margin: 30px;
+    @include utils.commonmargin;
     padding-top: 15px;
     padding-bottom: 10px;
   }
@@ -74,11 +75,11 @@ body{
     font-style: $italicFont;
   }
   .group{
-    margin: 30px;
+    @include utils.commonmargin;
   }
   .smallblock{
     padding: 10px;
-    margin: 30px;
+    @include utils.commonmargin;
     border-color: $brightPink;
     border-style: double;
   }
@@ -91,10 +92,14 @@ body{
   }
   
   .games{
-    padding: 50px 250px;
+    padding: 50px myFunc(5px, 50px);
   }
   .form{
     padding: 20px;
     font-size: x-large;
   }
 
+  @function myFunc($a, $b){
+    $result: $a * $b;
+    @return $result;
+  }

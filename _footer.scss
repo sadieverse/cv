@@ -1,7 +1,8 @@
+@use 'utils';
 .footer{
     background-color: $hfBackground;
     font-family: $secondaryFont;
-    margin: 30px;
+    @include utils.commonmargin;
     border: 0px;
     padding: 20px 20px 20px 60px;
 }
